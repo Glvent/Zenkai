@@ -1,0 +1,82 @@
+// Keep active-item indicators hidden and clear accent overrides written by older releases.
+export const HIDDEN_ACTIVE_INDICATOR_KEYS = Object.freeze([
+  "activityBar.activeBorder",
+  "activityBar.activeFocusBorder",
+  "panelTitle.activeBorder",
+  "tab.activeBorder",
+]) as readonly string[];
+
+// Popup surfaces share the transparency treatment so menus/widgets stay visually aligned.
+export const POPUP_BACKGROUND_KEYS = Object.freeze([
+  "debugExceptionWidget.background",
+  "dropdown.background",
+  "dropdown.listBackground",
+  "editorHoverWidget.background",
+  "editorSuggestWidget.background",
+  "editorWidget.background",
+  "menu.background",
+  "menu.separatorBackground",
+  "quickInput.background",
+]) as readonly string[];
+
+// Hover status bar mirrors the main hover surface so the footer does not fall back to a different palette role.
+export const HOVER_WIDGET_SYNC_KEYS = Object.freeze([
+  "editorHoverWidget.statusBarBackground",
+]) as readonly string[];
+
+// Terminal background follows its host area (panel, sidebar, or editor) when the user opts in.
+export const TERMINAL_MATCH_KEYS = Object.freeze(["terminal.background"]) as readonly string[];
+
+// colorCustomizations value that discards the theme color and uses VS Code's built-in default (VS Code 1.91+).
+export const DEFAULT_COLOR_VALUE = "default";
+
+// Accent keys written by the removed zenkai.accentPreset setting; still pruned from older settings.
+export const LEGACY_ACCENT_KEYS = Object.freeze([
+  "activityBar.foreground",
+  "activityBarBadge.background",
+  "activityBarTop.foreground",
+  "checkbox.foreground",
+  "debugConsoleInputIcon.foreground",
+  "debugIcon.breakpointCurrentStackframeForeground",
+  "debugView.valueChangedHighlight",
+  "editor.findMatchBackground",
+  "editor.findMatchBorder",
+  "editor.findMatchHighlightBackground",
+  "editorLightBulb.foreground",
+  "editorLightBulbAi.foreground",
+  "gitDecoration.modifiedResourceForeground",
+  "gitDecoration.stageModifiedResourceForeground",
+  "list.activeSelectionBackground",
+  "list.activeSelectionForeground",
+  "list.inactiveSelectionBackground",
+  "list.inactiveSelectionForeground",
+  "menu.selectionForeground",
+  "notificationLink.foreground",
+  "panelTitle.activeForeground",
+  "panelTitleBadge.background",
+  "radio.activeForeground",
+  "settings.checkboxForeground",
+  "settings.headerForeground",
+  "settings.modifiedItemIndicator",
+  "tab.activeForeground",
+  "testing.runAction",
+  "textLink.foreground",
+]) as readonly string[];
+
+// Keys the extension no longer writes but must still prune from settings left by older releases.
+// (1.0.x briefly pinned panel.background to recolor the terminal tabs container.)
+export const LEGACY_MANAGED_KEYS = Object.freeze(["panel.background"]) as readonly string[];
+
+// All keys managed by this extension. Existing values for these keys are cleared before reapplying.
+export const MANAGED_COLOR_KEYS = Object.freeze(
+  Array.from(
+    new Set([
+      ...HIDDEN_ACTIVE_INDICATOR_KEYS,
+      ...POPUP_BACKGROUND_KEYS,
+      ...HOVER_WIDGET_SYNC_KEYS,
+      ...TERMINAL_MATCH_KEYS,
+      ...LEGACY_ACCENT_KEYS,
+      ...LEGACY_MANAGED_KEYS,
+    ])
+  )
+) as readonly string[];

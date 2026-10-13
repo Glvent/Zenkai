@@ -1,7 +1,8 @@
 .theme-build/
 node_modules/
 dist/
-# Generated theme files — written by palettes/generate.ts, do not reformat
+.test-build/
+# Generated theme files — written by src/generators/vscode.ts, do not reformat
 package-lock.json
 themes/zenkai-*.json
 *.vsix

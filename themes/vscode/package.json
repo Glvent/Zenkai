@@ -1,25 +1,28 @@
 {
   "name": "zenkai",
   "displayName": "Zenkai",
-  "description": "A minimal Monokai Pro fork with four UI variants.",
-  "version": "1.0.1",
+  "description": "A minimal Monokai Pro fork with four dark variants and one light variant.",
+  "version": "1.0.6",
   "publisher": "glvent",
   "icon": "assets/zenkai.png",
   "author": "George Vent <gvent2007@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/glvent/zenkai-themes.git",
+    "url": "https://github.com/Glvent/Zenkai.git",
     "directory": "themes/vscode"
   },
-  "main": "./dist/extension.js",
+  "main": "./dist/src/extension.js",
   "scripts": {
-    "clean": "powershell -NoProfile -Command \"if (Test-Path dist) { Remove-Item -LiteralPath dist -Recurse -Force }\"",
-    "compile": "npm run clean && jiti palettes/generate.ts && jiti palettes/generate-zed.ts && jiti palettes/generate-chrome.ts && tsc -p ./tsconfig.json",
-    "build": "jiti build.ts",
-    "test": "npm run compile && node --test ./dist/test/customization.test.js ./dist/test/theme.test.js",
-    "dev": "npm run compile && code --extensionDevelopmentPath=$PWD && npm run watch",
-    "watch": "tsc -p ./tsconfig.json --watch",
-    "format": "prettier --write \"**/*.{ts,json,md}\""
+    "build": "jiti scripts/build.ts",
+    "compile": "jiti scripts/build.ts compile",
+    "test": "jiti scripts/build.ts test",
+    "dev": "jiti scripts/build.ts dev",
+    "generate": "jiti scripts/build.ts generate",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit && tsc -p tsconfig.tooling.json",
+    "package": "npm test && npx --yes @vscode/vsce package --allow-missing-repository --skip-license --baseImagesUrl https://github.com/Glvent/Zenkai/raw/HEAD/themes/vscode/",
+    "install:local": "npm run package && jiti scripts/build.ts install",
+    "version:patch": "npm version patch --no-git-tag-version",
+    "format": "prettier --write \"**/*.{ts,json,md}\" && prettier --config .prettierrc --write \"../../src/**/*.ts\""
   },
   "devDependencies": {
     "@types/node": "^24.13.2",
@@ -42,6 +45,7 @@
     "color-theme",
     "monokai",
     "dark",
+    "light",
     "zenkai"
   ],
   "contributes": {
@@ -65,32 +69,33 @@
         "label": "Zenkai Graphite",
         "uiTheme": "vs-dark",
         "path": "./themes/zenkai-graphite.json"
+      },
+      {
+        "label": "Zenkai Paper",
+        "uiTheme": "vs",
+        "path": "./themes/zenkai-paper.json"
       }
     ],
     "configuration": {
       "title": "Zenkai",
       "type": "object",
       "properties": {
-        "zenkai.accentCustomColor": {
-          "type": "string",
-          "default": "",
-          "order": 1,
-          "pattern": "^$|^#[0-9a-fA-F]{6}$",
-          "markdownDescription": "Custom accent color as `#RRGGBB`. Leave blank to keep the bundled theme accent."
-        },
         "zenkai.popupTransparency": {
           "type": "number",
           "default": 1,
-          "order": 2,
+          "order": 1,
           "minimum": 0,
           "maximum": 1,
-          "markdownDescription": "Adjust popup menu opacity from `0` to `1`. `1` keeps popup menus fully opaque, while `0` makes them fully transparent."
+          "markdownDescription": "Adjust popup menu opacity from `0` to `1`."
         },
-        "zenkai.terminalMatchSideBar": {
+        "zenkai.terminalMatchLocation": {
           "type": "boolean",
           "default": false,
-          "order": 3,
-          "markdownDescription": "Match the integrated terminal background to the sidebar color."
+          "order": 2,
+          "tags": [
+            "experimental"
+          ],
+          "markdownDescription": "Match the terminal background to the panel or sidebar it is in. Requires VS Code 1.91+."
         }
       }
     }

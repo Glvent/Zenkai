@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Zenkai Paper",
+  "short_name": "Zenkai",
+  "version": "1.0.0",
+  "version_name": "1.0",
+  "description": "Zenkai Paper - A muted light theme with a warm off-white cast.",
+  "minimum_chrome_version": "88",
+  "theme": {
+    "colors": {
+      "background_tab": [239, 237, 232],
+      "background_tab_inactive": [239, 237, 232],
+      "background_tab_incognito": [239, 237, 232],
+      "background_tab_incognito_inactive": [239, 237, 232],
+      "bookmark_text": [23, 21, 15],
+      "button_background": [239, 237, 232],
+      "frame": [239, 237, 232],
+      "frame_inactive": [239, 237, 232],
+      "frame_incognito": [239, 237, 232],
+      "frame_incognito_inactive": [239, 237, 232],
+      "ntp_background": [231, 229, 224],
+      "ntp_header": [239, 237, 232],
+      "ntp_link": [50, 50, 250],
+      "ntp_text": [23, 21, 15],
+      "omnibox_background": [221, 219, 213],
+      "omnibox_text": [23, 21, 15],
+      "tab_background_text": [48, 46, 40],
+      "tab_background_text_inactive": [73, 71, 65],
+      "tab_background_text_incognito": [48, 46, 40],
+      "tab_background_text_incognito_inactive": [73, 71, 65],
+      "tab_text": [23, 21, 15],
+      "toolbar": [233, 231, 225],
+      "toolbar_button_icon": [73, 71, 65],
+      "toolbar_text": [23, 21, 15]
+    }
+  }
+}

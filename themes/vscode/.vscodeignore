@@ -1,18 +1,17 @@
 # Keep the packaged .vsix lean: ship only runtime files.
-# Included by default (do NOT list): package.json, README.md, LICENSE,
-# assets/zenkai.png, themes/zenkai-*.json, dist/extension.js, dist/lib/**
+# Included by default: package.json, README.md, LICENSE,
+# assets/zenkai.png, themes/zenkai-*.json, dist/src/**, dist/themes/**
 
-# TypeScript sources (compiled into dist/ at build time)
+# Source and development tooling
+src/**
+scripts/**
 **/*.ts
-!**/*.d.ts
-palettes/
 
 # Tests (source and compiled)
 test/**
-dist/test/**
+.test-build/**
 
-# Build-only entrypoint and sourcemaps, not needed at runtime
-dist/build.js
+# Sourcemaps are not needed at runtime
 dist/**/*.map
 
 # Tooling / configs
@@ -22,6 +21,7 @@ tsconfig*.json
 .editorconfig
 .prettierrc
 .prettierignore
+.npmrc
 .vscode/**
 
 # Package manager / scratch
