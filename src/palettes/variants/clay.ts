@@ -11,7 +11,7 @@ export const clayVariant: ThemeVariantSource = {
     commandCenterBg: "#141414",
     sidebarBg: "#151515",
     raisedBg: "#171717",
-    editorBg: "#191919",
+    editorBg: "#181818",
     activityBarBorder: "#1f1f1f",
     border: "#262626",
     indentGuideInactive: "#2a2a2a",

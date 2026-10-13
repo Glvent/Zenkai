@@ -49,7 +49,7 @@ Generators detect light palettes with `isLightPalette` in `src/palettes/color.ts
 | `commandCenterBg` | Command center, status bar item hover | `#232323` | `#232220` | `#232120` | `#232427` | `#141414` | `#eeece7` |
 | `sidebarBg` | Side bar, tab bar strip, inactive tabs | `#242424` | `#242422` | `#242220` | `#242427` | `#151515` | `#edebe6` |
 | `raisedBg` | Sticky scroll, peek titles, drop targets, unchanged diff regions | `#252525` | `#252523` | `#252320` | `#262629` | `#171717` | `#ebe9e3` |
-| `editorBg` | Main editing surface, active tab, inputs, terminal (Zed), text on colored badges | `#282828` | `#282826` | `#282724` | `#292a2d` | `#191919` | `#e9e7e1` |
+| `editorBg` | Main editing surface, active tab, inputs, terminal (Zed), text on colored badges | `#282828` | `#282826` | `#282724` | `#292a2d` | `#181818` | `#e9e7e1` |
 | `surfaceBg` | Secondary surfaces: panel, buttons, badges, code blocks, peek editor, highlighted line, terminal (VS Code) | `#39383a` | `#393834` | `#393634` | `#393b3e` | `#242424` | `#dbd9d2` |
 | `interactionBg` | Hover/active fills, input borders, line numbers, rulers, whitespace, disabled text | `#555356` | `#555452` | `#555250` | `#55565a` | `#3d3d3d` | `#b1aea6` |
 
