@@ -44,48 +44,48 @@ Generators detect light palettes with `isLightPalette` in `src/palettes/color.ts
 
 | Role | Meaning | Graphite | Classic | Espresso | Nautilus | Clay | Paper |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `chromeBg` | Outermost window chrome: title bar, status bar, app background | `#1c1c1c` | `#1c1c1a` | `#1c1b1a` | `#1c1c1f` | `#1a1a18` | `#f1efea` |
-| `overlayBg` | Floating UI: menus, dropdowns, hovers, quick input, notifications, activity bar; browser frame and tabs | `#202020` | `#201f1e` | `#201f1e` | `#202023` | `#1f1e1d` | `#efede8` |
-| `commandCenterBg` | Command center, status bar item hover | `#232323` | `#232220` | `#232120` | `#232427` | `#21211f` | `#eeece7` |
-| `sidebarBg` | Side bar, tab bar strip, inactive tabs | `#242424` | `#242422` | `#242220` | `#242427` | `#222220` | `#edebe6` |
-| `raisedBg` | Sticky scroll, peek titles, drop targets, unchanged diff regions | `#252525` | `#252523` | `#252320` | `#262629` | `#242422` | `#ebe9e3` |
-| `editorBg` | Main editing surface, active tab, inputs, terminal (Zed), text on colored badges | `#282828` | `#282826` | `#282724` | `#292a2d` | `#262624` | `#e9e7e1` |
-| `surfaceBg` | Secondary surfaces: panel, buttons, badges, code blocks, peek editor, highlighted line, terminal (VS Code) | `#39383a` | `#393834` | `#393634` | `#393b3e` | `#373735` | `#dbd9d2` |
-| `interactionBg` | Hover/active fills, input borders, line numbers, rulers, whitespace, disabled text | `#555356` | `#555452` | `#555250` | `#55565a` | `#535350` | `#b1aea6` |
+| `chromeBg` | Outermost window chrome: title bar, status bar, app background | `#1c1c1c` | `#1c1c1a` | `#1c1b1a` | `#1c1c1f` | `#131313` | `#f1efea` |
+| `overlayBg` | Floating UI: menus, dropdowns, hovers, quick input, notifications, activity bar; browser frame and tabs | `#202020` | `#201f1e` | `#201f1e` | `#202023` | `#151515` | `#efede8` |
+| `commandCenterBg` | Command center, status bar item hover | `#232323` | `#232220` | `#232120` | `#232427` | `#181817` | `#eeece7` |
+| `sidebarBg` | Side bar, tab bar strip, inactive tabs | `#242424` | `#242422` | `#242220` | `#242427` | `#1a1a19` | `#edebe6` |
+| `raisedBg` | Sticky scroll, peek titles, drop targets, unchanged diff regions | `#252525` | `#252523` | `#252320` | `#262629` | `#1c1c1b` | `#ebe9e3` |
+| `editorBg` | Main editing surface, active tab, inputs, terminal (Zed), text on colored badges | `#282828` | `#282826` | `#282724` | `#292a2d` | `#1e1e1d` | `#e9e7e1` |
+| `surfaceBg` | Secondary surfaces: panel, buttons, badges, code blocks, peek editor, highlighted line, terminal (VS Code) | `#39383a` | `#393834` | `#393634` | `#393b3e` | `#2c2c2a` | `#dbd9d2` |
+| `interactionBg` | Hover/active fills, input borders, line numbers, rulers, whitespace, disabled text | `#555356` | `#555452` | `#555250` | `#55565a` | `#454442` | `#b1aea6` |
 
 ### Borders and guides
 
 | Role | Meaning | Graphite | Classic | Espresso | Nautilus | Clay | Paper |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `activityBarBorder` | Activity bar edge only | `#2e2e2e` | `#2e2e2c` | `#2e2c2a` | `#2e2f32` | `#2c2c2a` | `#d4d2cc` |
-| `border` | Default border for widgets, groups, popups | `#323232` | `#323230` | `#32302e` | `#323336` | `#30302e` | `#d0cec7` |
-| `indentGuideInactive` | Inactive indent guides | `#383838` | `#383836` | `#383634` | `#38393c` | `#363634` | `#d6d4ce` |
-| `chromeBorder` | Borders on chrome: side bar, status bar, title bar; Zed active/selected elements | `#3a3a3a` | `#3a3a38` | `#3a3836` | `#3a3b3e` | `#383836` | `#cbc9c2` |
-| `panelBorder` | Panel and terminal borders | `#434344` | `#434341` | `#43403e` | `#434447` | `#41413f` | `#c5c3bb` |
-| `indentGuideActive` | Active indent guide, tree guides | `#5a5a5a` | `#5a5a58` | `#5a5856` | `#5a5b60` | `#585855` | `#a29f97` |
+| `activityBarBorder` | Activity bar edge only | `#2e2e2e` | `#2e2e2c` | `#2e2c2a` | `#2e2f32` | `#262625` | `#d4d2cc` |
+| `border` | Default border for widgets, groups, popups | `#323232` | `#323230` | `#32302e` | `#323336` | `#2e2e2c` | `#d0cec7` |
+| `indentGuideInactive` | Inactive indent guides | `#383838` | `#383836` | `#383634` | `#38393c` | `#333331` | `#d6d4ce` |
+| `chromeBorder` | Borders on chrome: side bar, status bar, title bar; Zed active/selected elements | `#3a3a3a` | `#3a3a38` | `#3a3836` | `#3a3b3e` | `#353533` | `#cbc9c2` |
+| `panelBorder` | Panel and terminal borders | `#434344` | `#434341` | `#43403e` | `#434447` | `#383835` | `#c5c3bb` |
+| `indentGuideActive` | Active indent guide, tree guides | `#5a5a5a` | `#5a5a58` | `#5a5856` | `#5a5b60` | `#52514e` | `#a29f97` |
 
 ### Foregrounds
 
 | Role | Meaning | Graphite | Classic | Espresso | Nautilus | Clay | Paper |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `fgSubtle` | Placeholders, ghost text, code lens, focus outlines, bright-black ANSI | `#6c6a6f` | `#6c6c68` | `#6c6a68` | `#6c6d72` | `#6d6b65` | `#85827a` |
-| `fgStatus` | Status bar text only | `#6e6c71` | `#6e6e6a` | `#6e6c6a` | `#6e6f74` | `#6f6d67` | `#77746c` |
-| `fgMuted` | Secondary labels, icons, inactive tabs, breadcrumbs, punctuation | `#8b888f` | `#8b8b87` | `#8b8886` | `#8c8d92` | `#8c8a83` | `#65625b` |
-| `fgSidebar` | Side bar text only | `#8e8b93` | `#8e8e8a` | `#8e8c89` | `#8e8f94` | `#8f8d86` | `#615e57` |
-| `fgSecondary` | Activity bar icons, widget text, active line number, selection tint, scrollbar thumb | `#bab6c0` | `#babab4` | `#bab8b4` | `#b9b8be` | `#c2c0b6` | `#46443f` |
-| `fg` | Primary text, cursor, and the neutral tint for hover, selection, and match highlights | `#f7f1ff` | `#f0f0ea` | `#eceae6` | `#d8dbe1` | `#f0eee6` | `#2b2a27` |
-| `brightFg` | Strongest foreground: faint menubar selection tint, bright-white ANSI | `#ffffff` | `#ffffff` | `#ffffff` | `#ffffff` | `#faf9f5` | `#141412` |
+| `fgSubtle` | Placeholders, ghost text, code lens, focus outlines, bright-black ANSI | `#6c6a6f` | `#6c6c68` | `#6c6a68` | `#6c6d72` | `#6d6b67` | `#85827a` |
+| `fgStatus` | Status bar text only | `#6e6c71` | `#6e6e6a` | `#6e6c6a` | `#6e6f74` | `#7b7974` | `#77746c` |
+| `fgMuted` | Secondary labels, icons, inactive tabs, breadcrumbs, punctuation | `#8b888f` | `#8b8b87` | `#8b8886` | `#8c8d92` | `#898781` | `#65625b` |
+| `fgSidebar` | Side bar text only | `#8e8b93` | `#8e8e8a` | `#8e8c89` | `#8e8f94` | `#a5a49a` | `#615e57` |
+| `fgSecondary` | Activity bar icons, widget text, active line number, selection tint, scrollbar thumb | `#bab6c0` | `#babab4` | `#bab8b4` | `#b9b8be` | `#c3c2b7` | `#46443f` |
+| `fg` | Primary text, cursor, and the neutral tint for hover, selection, and match highlights | `#f7f1ff` | `#f0f0ea` | `#eceae6` | `#d8dbe1` | `#f0efec` | `#2b2a27` |
+| `brightFg` | Strongest foreground: faint menubar selection tint, bright-white ANSI | `#ffffff` | `#ffffff` | `#ffffff` | `#ffffff` | `#f9f9f7` | `#141412` |
 
 ### Semantic and accent colors
 
 | Role | Meaning | Graphite | Classic | Espresso | Nautilus | Clay | Paper |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `accent` | Primary accent: active tab/panel text, list and quick-pick selection, find/focus highlights, light bulb, strings | `#f0a84a` | `#ddb860` | `#c89878` | `#5278a0` | `#d97757` | `#8a5e10` |
-| `error` | Errors, deletions, badges, keywords, tags | `#fc618d` | `#dc7890` | `#d07888` | `#d07888` | `#d87884` | `#b03c5e` |
-| `warning` | Warnings, conflicts, modified files, parameters | `#fd9353` | `#d09570` | `#c09868` | `#d0a870` | `#d4a27f` | `#a24f1c` |
-| `success` | Success, additions, checkboxes and radios, test run actions, functions | `#7bd88f` | `#8ec078` | `#86b074` | `#78b888` | `#93a872` | `#3d7232` |
-| `info` | Info, renamed files, links, types, classes, attributes | `#5ad4e6` | `#6ec4d0` | `#72b8d4` | `#5888b0` | `#6a9bcc` | `#23707c` |
-| `purple` | Hints, settings headers and modified indicators, numbers, constants, booleans | `#948ae3` | `#9a90dc` | `#a894dc` | `#9890d8` | `#9f94d6` | `#6c55b4` |
+| `error` | Errors, deletions, badges, keywords, tags | `#fc618d` | `#dc7890` | `#d07888` | `#d07888` | `#ec7e7e` | `#b03c5e` |
+| `warning` | Warnings, conflicts, modified files, parameters | `#fd9353` | `#d09570` | `#c09868` | `#d0a870` | `#f9c868` | `#a24f1c` |
+| `success` | Success, additions, checkboxes and radios, test run actions, functions | `#7bd88f` | `#8ec078` | `#86b074` | `#78b888` | `#55bf50` | `#3d7232` |
+| `info` | Info, renamed files, links, types, classes, attributes | `#5ad4e6` | `#6ec4d0` | `#72b8d4` | `#5888b0` | `#6da7ec` | `#23707c` |
+| `purple` | Hints, settings headers and modified indicators, numbers, constants, booleans | `#948ae3` | `#9a90dc` | `#a894dc` | `#9890d8` | `#b796ff` | `#6c55b4` |
 
 ### Fixed colors
 
@@ -124,7 +124,7 @@ Off-palette grays are a palette role plus a fixed per-channel offset, chosen so 
 | `commentGray` | `fgSubtle` - 3 (light: + 3) | `#69676c` | Syntax comments (VS Code, Zed); ignored/unreachable (Zed) |
 | `elevatedSurface` | `chromeBg` + 2 | `#1e1e1e` | Zed `elevated_surface.background` |
 | `disabledGray` | `editorBg` + 4 (light: - 4) | `#2c2c2c` | Zed disabled borders, pane borders, dim black |
-| `focusBorder` | Per variant (Graphite `#56545a`, Classic `#565458`, Espresso `#565256`, Nautilus `#57575d`, Clay `#555451`, Paper `#aba8a0`) | `#56545a` | Zed focused borders |
+| `focusBorder` | Per variant (Graphite `#56545a`, Classic `#565458`, Espresso `#565256`, Nautilus `#57575d`, Clay `#5f5e5a`, Paper `#aba8a0`) | `#56545a` | Zed focused borders |
 | NTP background | `chromeBg` - 10 | `[18, 18, 18]` | Chrome `ntp_background` |
 | Toolbar | `editorBg` + 8 (light: + 0) | `[48, 48, 48]` | Chrome `toolbar` (active tab) |
 | Omnibox | `editorBg` + 24 (light: - 12) | `[64, 64, 64]` | Chrome `omnibox_background` |
