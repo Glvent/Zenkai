@@ -71,7 +71,7 @@ const focusBorderById: Record<string, string> = Object.freeze({
   classic: "#565458",
   espresso: "#565256",
   nautilus: "#57575d",
-  clay: "#5f5e5a",
+  clay: "#555555",
   paper: "#aba8a0",
 });
 
