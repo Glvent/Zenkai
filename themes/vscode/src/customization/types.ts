@@ -9,12 +9,16 @@ export type ThemeName =
 
 // Raw settings mirror VS Code configuration values before validation and coercion.
 export interface RawSettings {
+  accentCustomColor?: unknown;
+  accentPresets?: Partial<Record<ThemeName, unknown>>;
   popupTransparency?: unknown;
   terminalMatchLocation?: unknown;
 }
 
 // Normalized settings are safe to apply during customization generation.
 export interface NormalizedSettings {
+  accentCustomColor: string;
+  accentPresets: Partial<Record<ThemeName, string>>;
   popupTransparency: number;
   terminalMatchLocation: boolean;
 }

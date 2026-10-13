@@ -82,6 +82,27 @@ Choose a palette first, then adjust these optional settings in **Settings → Ex
 | `zenkai.popupTransparency`     | `1`     | Popup opacity for menus, dropdowns, hovers, and suggestions. `1` is fully opaque; values between `0` and `1` add transparency. `0` leaves the bundled popup colors unchanged. |
 | `zenkai.terminalMatchLocation` | `false` | **Experimental · VS Code 1.91+.** Lets the terminal background follow its host panel, sidebar, or editor area.                                                                |
 
+### Accent
+
+Each variant has its own accent preset setting. The default keeps the bundled accent; presets recolor interface highlights (selections, active tab and panel text, find borders, and similar). Syntax colors are unchanged.
+
+| Setting                  | Default             | Presets                                                                    |
+| ------------------------ | ------------------- | -------------------------------------------------------------------------- |
+| `zenkai.accent.graphite` | Default (`#f0a84a`) | Sand `#e6c88a`, Copper `#d98b5f`, Steel `#7fa7cf`, Sage `#a6bf8f`          |
+| `zenkai.accent.classic`  | Default (`#ddb860`) | Olive `#b5b86a`, Khaki `#cdb98a`, Rust `#c97f56`, Moss `#8fae7a`           |
+| `zenkai.accent.espresso` | Default (`#c89878`) | Caramel `#d8a65c`, Cinnamon `#c0784e`, Latte `#d6bfa0`, Rosewood `#c48f8f` |
+| `zenkai.accent.nautilus` | Default (`#5278a0`) | Teal `#4f9a9a`, Sky `#7ab0d8`, Seafoam `#7fb8a4`, Indigo `#7b84c4`         |
+| `zenkai.accent.clay`     | Default (`#d97757`) | Kraft `#d4a27f`, Crail `#c15f3c`, Claude Blue `#6a9bcc`, Sage `#a3b18a`    |
+| `zenkai.accent.paper`    | Default (`#8a5e10`) | Rust `#a3471f`, Navy `#2f5d8a`, Forest `#3f6e3a`, Plum `#7a4a7e`           |
+
+`zenkai.accentCustomColor` takes a `#RRGGBB` value, overrides the preset for every Zenkai theme, and is blank by default.
+
+```json
+{
+	"zenkai.accent.clay": "Crail"
+}
+```
+
 Settings take effect while a Zenkai theme is active. The extension applies theme-scoped overrides in `workbench.colorCustomizations`, preserving unrelated customizations.
 
 ---
