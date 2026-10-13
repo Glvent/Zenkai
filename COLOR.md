@@ -81,11 +81,11 @@ Generators detect light palettes with `isLightPalette` in `src/palettes/color.ts
 | Role | Meaning | Graphite | Classic | Espresso | Nautilus | Clay | Paper |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `accent` | Primary accent: active tab/panel text, list and quick-pick selection, find/focus highlights, light bulb, strings | `#f0a84a` | `#ddb860` | `#c89878` | `#5278a0` | `#d97757` | `#8a5e10` |
-| `error` | Errors, deletions, badges, keywords, tags | `#fc618d` | `#dc7890` | `#d07888` | `#d07888` | `#ec7e7e` | `#b03c5e` |
-| `warning` | Warnings, conflicts, modified files, parameters | `#fd9353` | `#d09570` | `#c09868` | `#d0a870` | `#f9c868` | `#a24f1c` |
-| `success` | Success, additions, checkboxes and radios, test run actions, functions | `#7bd88f` | `#8ec078` | `#86b074` | `#78b888` | `#55bf50` | `#3d7232` |
-| `info` | Info, renamed files, links, types, classes, attributes | `#5ad4e6` | `#6ec4d0` | `#72b8d4` | `#5888b0` | `#6da7ec` | `#23707c` |
-| `purple` | Hints, settings headers and modified indicators, numbers, constants, booleans | `#948ae3` | `#9a90dc` | `#a894dc` | `#9890d8` | `#b796ff` | `#6c55b4` |
+| `error` | Errors, deletions, badges, keywords, tags | `#fc618d` | `#fc618d` | `#fc618d` | `#fc618d` | `#fc618d` | `#b03c5e` |
+| `warning` | Warnings, conflicts, modified files, parameters | `#fd9353` | `#fd9353` | `#fd9353` | `#fd9353` | `#fd9353` | `#a15018` |
+| `success` | Success, additions, checkboxes and radios, test run actions, functions | `#7bd88f` | `#7bd88f` | `#7bd88f` | `#7bd88f` | `#7bd88f` | `#2b743f` |
+| `info` | Info, renamed files, links, types, classes, attributes | `#5ad4e6` | `#5ad4e6` | `#5ad4e6` | `#5ad4e6` | `#5ad4e6` | `#23707b` |
+| `purple` | Hints, settings headers and modified indicators, numbers, constants, booleans | `#948ae3` | `#948ae3` | `#948ae3` | `#948ae3` | `#948ae3` | `#6657b6` |
 
 ### Fixed colors
 
@@ -139,6 +139,8 @@ Use these when building a new target so the same concept gets the same role ever
 ### Syntax
 
 VS Code and Zed both remap syntax colors per variant. Follow this table for new targets.
+
+Syntax colors stay the same across variants. Every dark variant uses Graphite's exact `error`, `warning`, `success`, `info`, and `purple` values. Paper uses the same hues, darkened to keep about 4.6:1 contrast on its editor. Only `accent` (strings) and the neutral grays change per variant.
 
 #### Code
 
