@@ -101,6 +101,134 @@
             "experimental"
           ],
           "markdownDescription": "Match the terminal background to the panel or sidebar it is in. Requires VS Code 1.91+."
+        },
+        "zenkai.accent.graphite": {
+          "type": "string",
+          "default": "Default",
+          "order": 3,
+          "enum": [
+            "Default",
+            "Sand",
+            "Copper",
+            "Steel",
+            "Sage"
+          ],
+          "enumDescriptions": [
+            "#f0a84a",
+            "#e6c88a",
+            "#d98b5f",
+            "#7fa7cf",
+            "#a6bf8f"
+          ],
+          "markdownDescription": "Accent color for Zenkai Graphite. Changes interface highlights; syntax colors are unchanged."
+        },
+        "zenkai.accent.classic": {
+          "type": "string",
+          "default": "Default",
+          "order": 4,
+          "enum": [
+            "Default",
+            "Olive",
+            "Khaki",
+            "Rust",
+            "Moss"
+          ],
+          "enumDescriptions": [
+            "#ddb860",
+            "#b5b86a",
+            "#cdb98a",
+            "#c97f56",
+            "#8fae7a"
+          ],
+          "markdownDescription": "Accent color for Zenkai Classic. Changes interface highlights; syntax colors are unchanged."
+        },
+        "zenkai.accent.espresso": {
+          "type": "string",
+          "default": "Default",
+          "order": 5,
+          "enum": [
+            "Default",
+            "Caramel",
+            "Cinnamon",
+            "Latte",
+            "Rosewood"
+          ],
+          "enumDescriptions": [
+            "#c89878",
+            "#d8a65c",
+            "#c0784e",
+            "#d6bfa0",
+            "#c48f8f"
+          ],
+          "markdownDescription": "Accent color for Zenkai Espresso. Changes interface highlights; syntax colors are unchanged."
+        },
+        "zenkai.accent.nautilus": {
+          "type": "string",
+          "default": "Default",
+          "order": 6,
+          "enum": [
+            "Default",
+            "Teal",
+            "Sky",
+            "Seafoam",
+            "Indigo"
+          ],
+          "enumDescriptions": [
+            "#5278a0",
+            "#4f9a9a",
+            "#7ab0d8",
+            "#7fb8a4",
+            "#7b84c4"
+          ],
+          "markdownDescription": "Accent color for Zenkai Nautilus. Changes interface highlights; syntax colors are unchanged."
+        },
+        "zenkai.accent.clay": {
+          "type": "string",
+          "default": "Default",
+          "order": 7,
+          "enum": [
+            "Default",
+            "Kraft",
+            "Crail",
+            "Claude Blue",
+            "Sage"
+          ],
+          "enumDescriptions": [
+            "#d97757",
+            "#d4a27f",
+            "#c15f3c",
+            "#6a9bcc",
+            "#a3b18a"
+          ],
+          "markdownDescription": "Accent color for Zenkai Clay. Changes interface highlights; syntax colors are unchanged."
+        },
+        "zenkai.accent.paper": {
+          "type": "string",
+          "default": "Default",
+          "order": 8,
+          "enum": [
+            "Default",
+            "Rust",
+            "Navy",
+            "Forest",
+            "Plum"
+          ],
+          "enumDescriptions": [
+            "#8a5e10",
+            "#a3471f",
+            "#2f5d8a",
+            "#3f6e3a",
+            "#7a4a7e"
+          ],
+          "markdownDescription": "Accent color for Zenkai Paper. Changes interface highlights; syntax colors are unchanged."
+        },
+        "zenkai.accentCustomColor": {
+          "type": "string",
+          "default": "",
+          "order": 9,
+          "pattern": "^$|^#[0-9a-fA-F]{6}$",
+          "patternErrorMessage": "Enter a color as #RRGGBB, or leave blank.",
+          "markdownDescription": "Custom accent color as `#RRGGBB`. Overrides the accent preset for every Zenkai theme. Leave blank to use the presets. Changes interface highlights; syntax colors are unchanged."
         }
       }
     }

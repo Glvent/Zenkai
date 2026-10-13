@@ -1,4 +1,5 @@
 // Public entrypoint for the theme customization helpers used by the extension and tests.
+export { ACCENT_DEFAULT, ACCENT_PRESETS } from "./accents";
 export { MANAGED_COLOR_KEYS } from "./keys";
 export {
   SETTINGS_NAMESPACE,

@@ -41,3 +41,9 @@ export function alphaFromTransparency(transparency: number): string {
 function toHexByte(value: number): string {
   return clamp(Math.round(value), 0, 255).toString(16).padStart(2, "0");
 }
+
+// Alpha suffix of an 8-digit color, or null for opaque 6-digit colors.
+export function getAlphaChannel(value: string): string | null {
+  const normalized = normalizeHex(value);
+  return normalized.length === 9 ? normalized.slice(7) : null;
+}

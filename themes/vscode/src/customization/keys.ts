@@ -63,6 +63,61 @@ export const LEGACY_ACCENT_KEYS = Object.freeze([
   "textLink.foreground",
 ]) as readonly string[];
 
+// Workbench keys that hold the bundled accent in every Zenkai theme (identical across variants).
+// Opaque keys take the accent color directly.
+export const ACCENT_COLOR_KEYS = Object.freeze([
+  "activityBar.dropBorder",
+  "activityBarTop.dropBorder",
+  "agentSessionSelectedBadge.border",
+  "agentStatusIndicator.background",
+  "agentsGradient.tintColor",
+  "chat.editedFileForeground",
+  "chat.inputWorkingBorderColor1",
+  "chat.slashCommandForeground",
+  "commentsView.unresolvedIcon",
+  "debugConsoleInputIcon.foreground",
+  "debugIcon.breakpointCurrentStackframeForeground",
+  "debugView.valueChangedHighlight",
+  "editor.compositionBorder",
+  "editor.findMatchBorder",
+  "editor.snippetFinalTabstopHighlightBorder",
+  "editorCommentsWidget.unresolvedBorder",
+  "editorGutter.commentUnresolvedGlyphForeground",
+  "editorLightBulb.foreground",
+  "editorLightBulbAi.foreground",
+  "editorOverviewRuler.commentUnresolvedForeground",
+  "editorSuggestWidget.focusHighlightForeground",
+  "extensionIcon.starForeground",
+  "gauge.foreground",
+  "inlineEdit.gutterIndicator.secondaryForeground",
+  "list.activeSelectionForeground",
+  "list.activeSelectionIconForeground",
+  "list.dropBetweenBackground",
+  "list.focusHighlightForeground",
+  "list.inactiveSelectionForeground",
+  "list.inactiveSelectionIconForeground",
+  "mcpIcon.starForeground",
+  "menu.selectionForeground",
+  "panel.dropBorder",
+  "panelTitle.activeForeground",
+  "quickInputList.focusForeground",
+  "quickInputList.focusIconForeground",
+  "tab.activeForeground",
+  "tab.dragAndDropBorder",
+  "terminal.findMatchBorder",
+  "terminal.tab.activeBorder",
+  "terminalSymbolIcon.branchForeground",
+  "terminalSymbolIcon.pullRequestForeground",
+]) as readonly string[];
+
+// Accent keys bundled with an alpha suffix; the suffix is preserved when the accent changes.
+export const ACCENT_ALPHA_KEYS = Object.freeze([
+  "chat.slashCommandBackground",
+  "editorCommentsWidget.rangeActiveBackground",
+  "editorCommentsWidget.rangeBackground",
+  "minimap.chatEditHighlight",
+]) as readonly string[];
+
 // Keys the extension no longer writes but must still prune from settings left by older releases.
 // (1.0.x briefly pinned panel.background to recolor the terminal tabs container.)
 export const LEGACY_MANAGED_KEYS = Object.freeze(["panel.background"]) as readonly string[];
@@ -75,6 +130,8 @@ export const MANAGED_COLOR_KEYS = Object.freeze(
       ...POPUP_BACKGROUND_KEYS,
       ...HOVER_WIDGET_SYNC_KEYS,
       ...TERMINAL_MATCH_KEYS,
+      ...ACCENT_COLOR_KEYS,
+      ...ACCENT_ALPHA_KEYS,
       ...LEGACY_ACCENT_KEYS,
       ...LEGACY_MANAGED_KEYS,
     ])

@@ -6,14 +6,14 @@ A minimal, muted theme forked from Monokai Pro, with five dark variants and one 
 
 ## Variants
 
-| Variant      | Character           | Background                                | Accent                                    |
-| ------------ | ------------------- | ----------------------------------------- | ----------------------------------------- |
-| **Graphite** | Neutral gray        | ![](assets/swatches/282828.svg) `#282828` | ![](assets/swatches/f0a84a.svg) `#f0a84a` |
-| **Classic**  | Warm olive cast     | ![](assets/swatches/282826.svg) `#282826` | ![](assets/swatches/ddb860.svg) `#ddb860` |
-| **Espresso** | Warm brown cast     | ![](assets/swatches/282724.svg) `#282724` | ![](assets/swatches/c89878.svg) `#c89878` |
-| **Nautilus** | Cool blue-gray cast | ![](assets/swatches/292a2d.svg) `#292a2d` | ![](assets/swatches/5278a0.svg) `#5278a0` |
-| **Clay**     | Near-black, clay accent    | ![](assets/swatches/1d1d1d.svg) `#1d1d1d` | ![](assets/swatches/d97757.svg) `#d97757` |
-| **Paper**    | Light, warm off-white | ![](assets/swatches/e9e7e1.svg) `#e9e7e1` | ![](assets/swatches/8a5e10.svg) `#8a5e10` |
+| Variant      | Character               | Background                                | Accent                                    |
+| ------------ | ----------------------- | ----------------------------------------- | ----------------------------------------- |
+| **Graphite** | Neutral gray            | ![](assets/swatches/282828.svg) `#282828` | ![](assets/swatches/f0a84a.svg) `#f0a84a` |
+| **Classic**  | Warm olive cast         | ![](assets/swatches/282826.svg) `#282826` | ![](assets/swatches/ddb860.svg) `#ddb860` |
+| **Espresso** | Warm brown cast         | ![](assets/swatches/282724.svg) `#282724` | ![](assets/swatches/c89878.svg) `#c89878` |
+| **Nautilus** | Cool blue-gray cast     | ![](assets/swatches/292a2d.svg) `#292a2d` | ![](assets/swatches/5278a0.svg) `#5278a0` |
+| **Clay**     | Near-black, clay accent | ![](assets/swatches/1d1d1d.svg) `#1d1d1d` | ![](assets/swatches/d97757.svg) `#d97757` |
+| **Paper**    | Light, warm off-white   | ![](assets/swatches/e9e7e1.svg) `#e9e7e1` | ![](assets/swatches/8a5e10.svg) `#8a5e10` |
 
 ## Installation
 
@@ -45,6 +45,8 @@ This builds and tests the extension, packages a VSIX, and installs it into your 
 | ------------------------------ | ------------------------------------------------------------------------------------------------ |
 | `zenkai.popupTransparency`     | Popup menu opacity, from `0` to `1`                                                              |
 | `zenkai.terminalMatchLocation` | _Experimental._ Match the terminal background to the panel or sidebar hosting it (VS Code 1.91+) |
+| `zenkai.accent.<variant>`      | Named accent preset per theme (graphite, classic, espresso, nautilus, clay, paper)               |
+| `zenkai.accentCustomColor`     | Custom `#RRGGBB` accent for every Zenkai theme; overrides presets                                |
 
 ## Project layout
 

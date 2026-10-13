@@ -1,12 +1,19 @@
-import { DEFAULT_COLOR_VALUE, POPUP_BACKGROUND_KEYS, TERMINAL_MATCH_KEYS } from "./keys";
+import { resolvePreset } from "./accents";
+import {
+  ACCENT_ALPHA_KEYS,
+  ACCENT_COLOR_KEYS,
+  DEFAULT_COLOR_VALUE,
+  POPUP_BACKGROUND_KEYS,
+  TERMINAL_MATCH_KEYS,
+} from "./keys";
 import { SUPPORTED_THEMES } from "./catalog";
-import { withAlpha, alphaFromTransparency } from "./color";
+import { getAlphaChannel, withAlpha, alphaFromTransparency } from "./color";
 import { normalizeSettings } from "./settings";
 import type { RawSettings, ThemeCustomizationBlock, ThemeName } from "./types";
 
 /**
  * Build the managed color overrides for one bundled theme from normalized user preferences.
- * Each section applies one customization dimension: terminal and popups.
+ * Each section applies one customization dimension: accent, terminal and popups.
  */
 export function buildThemeOverrides(
   themeName: ThemeName,
@@ -21,6 +28,26 @@ export function buildThemeOverrides(
   const settings = normalizeSettings(rawSettings);
   const colors = theme.colors;
   const overrides: ThemeCustomizationBlock = {};
+
+  // A custom color wins over the per-theme preset; Default/invalid values leave the bundled accent.
+  const accentColor =
+    settings.accentCustomColor || resolvePreset(themeName, settings.accentPresets[themeName]);
+
+  if (accentColor) {
+    for (const colorKey of ACCENT_COLOR_KEYS) {
+      if (colors[colorKey]) {
+        overrides[colorKey] = accentColor;
+      }
+    }
+
+    // Keep each key's bundled alpha so tints stay translucent.
+    for (const colorKey of ACCENT_ALPHA_KEYS) {
+      const alpha = colors[colorKey] ? getAlphaChannel(colors[colorKey]) : null;
+      if (alpha) {
+        overrides[colorKey] = withAlpha(accentColor, alpha);
+      }
+    }
+  }
 
   // With no terminal color, VS Code paints the terminal with the panel, sidebar, or editor
   // background depending on where the terminal view lives.

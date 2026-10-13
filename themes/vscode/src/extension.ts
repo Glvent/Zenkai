@@ -10,6 +10,11 @@ import type { RawSettings, ThemeName } from "./customization/types";
 
 const supportedThemeNames = new Set<ThemeName>(getSupportedThemeNames());
 
+// "Zenkai Clay" -> "accent.clay"
+function accentSettingKey(themeName: ThemeName): string {
+  return `accent.${themeName.replace("Zenkai ", "").toLowerCase()}`;
+}
+
 export function activate(context: vscode.ExtensionContext): void {
   let isApplying = false;
   let pendingRun: Promise<void> = Promise.resolve();
@@ -29,7 +34,14 @@ export function activate(context: vscode.ExtensionContext): void {
         }
 
         const zenkaiConfig = vscode.workspace.getConfiguration(SETTINGS_NAMESPACE);
+        const accentPresets: RawSettings["accentPresets"] = {};
+        for (const themeName of supportedThemeNames) {
+          accentPresets[themeName] = zenkaiConfig.get(accentSettingKey(themeName));
+        }
+
         const settings = normalizeSettings({
+          accentCustomColor: zenkaiConfig.get("accentCustomColor"),
+          accentPresets,
           popupTransparency: zenkaiConfig.get("popupTransparency"),
           terminalMatchLocation: zenkaiConfig.get("terminalMatchLocation"),
         } satisfies RawSettings);
