@@ -22,7 +22,7 @@
 
 The same syntax language, with a different atmosphere around it. Each variant pairs quiet surfaces with distinct colors for strings, keywords, functions, types, and numbers.
 
-![Zenkai palette comparison: Graphite in neutral gray and amber; Classic in olive gray and muted gold; Espresso in warm brown and copper; Nautilus in cool blue-gray and slate blue; Clay in warm charcoal and clay orange; Paper in warm off-white and deep ochre.](assets/palette-preview.png)
+![Zenkai palette comparison: Graphite in neutral gray and amber; Classic in olive gray and muted gold; Espresso in warm brown and copper; Nautilus in cool blue-gray and slate blue; Clay in near-black and clay orange; Paper in warm off-white and deep ochre.](assets/palette-preview.png)
 
 _An overview of the bundled palette colors, not an editor screenshot._
 
@@ -32,7 +32,7 @@ _An overview of the bundled palette colors, not an editor screenshot._
 | **Zenkai Classic**  | Warm olive and muted gold      | `#282826`         | `#ddb860` |
 | **Zenkai Espresso** | Warm browns and soft copper    | `#282724`         | `#c89878` |
 | **Zenkai Nautilus** | Cool blue-grays and slate blue | `#292a2d`         | `#5278a0` |
-| **Zenkai Clay**     | Warm charcoal, clay accent     | `#262624`         | `#d97757` |
+| **Zenkai Clay**     | Near-black, clay accent        | `#1e1e1d`         | `#d97757` |
 | **Zenkai Paper**    | Light warm paper and ochre     | `#e9e7e1`         | `#8a5e10` |
 
 ### Color where it counts
