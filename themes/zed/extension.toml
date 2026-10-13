@@ -4,12 +4,13 @@ version = "0.0.1"
 schema_version = 1
 authors = ["Zenkai"]
 repository = "file:///V:/Zenkai"
-description = "Zenkai themes for Zed — Classic, Espresso, Nautilus, Graphite, and Paper."
+description = "Zenkai themes for Zed — Classic, Espresso, Nautilus, Graphite, Clay, and Paper."
 
 themes = [
   "themes/zenkai-classic.json",
   "themes/zenkai-espresso.json",
   "themes/zenkai-nautilus.json",
   "themes/zenkai-graphite.json",
+  "themes/zenkai-clay.json",
   "themes/zenkai-paper.json",
 ]

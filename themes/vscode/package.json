@@ -1,7 +1,7 @@
 {
   "name": "zenkai",
   "displayName": "Zenkai",
-  "description": "A minimal Monokai Pro fork with four dark variants and one light variant.",
+  "description": "A minimal Monokai Pro fork with five dark variants and one light variant.",
   "version": "1.0.6",
   "publisher": "glvent",
   "icon": "assets/zenkai.png",
@@ -69,6 +69,11 @@
         "label": "Zenkai Graphite",
         "uiTheme": "vs-dark",
         "path": "./themes/zenkai-graphite.json"
+      },
+      {
+        "label": "Zenkai Clay",
+        "uiTheme": "vs-dark",
+        "path": "./themes/zenkai-clay.json"
       },
       {
         "label": "Zenkai Paper",

@@ -19,7 +19,7 @@ import test, { type TestContext } from "node:test";
 // Tests are emitted under .test-build/themes/vscode/test, outside runtime dist/.
 const packageRoot = path.resolve(__dirname, "../../../..");
 const repoRoot = path.resolve(packageRoot, "../..");
-const variantIds = ["classic", "espresso", "nautilus", "graphite", "paper"];
+const variantIds = ["classic", "espresso", "nautilus", "graphite", "clay", "paper"];
 
 function createFixture(context: TestContext): { root: string; extension: string } {
 	const root = realpathSync(mkdtempSync(path.join(tmpdir(), "zenkai build & test-")));
@@ -110,6 +110,7 @@ test("build emits only runtime files without changing versions, packages, or oth
 		"Zenkai Espresso",
 		"Zenkai Nautilus",
 		"Zenkai Graphite",
+		"Zenkai Clay",
 		"Zenkai Paper",
 	]);
 });

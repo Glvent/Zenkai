@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>Less noise. More code.</strong><br />
-  A muted take on Monokai Pro, with four dark palettes for VS Code.
+  A muted take on Monokai Pro, with five dark palettes for VS Code.
 </p>
 
 <p align="center">
@@ -32,6 +32,7 @@ _An overview of the bundled palette colors, not an editor screenshot._
 | **Zenkai Classic**  | Warm olive and muted gold      | `#282826`         | `#ddb860` |
 | **Zenkai Espresso** | Warm browns and soft copper    | `#282724`         | `#c89878` |
 | **Zenkai Nautilus** | Cool blue-grays and slate blue | `#292a2d`         | `#5278a0` |
+| **Zenkai Clay**     | Warm charcoal, clay accent     | `#262624`         | `#d97757` |
 | **Zenkai Paper**    | Light warm paper and ochre     | `#e9e7e1`         | `#8a5e10` |
 
 ### Color where it counts
@@ -44,7 +45,7 @@ _An overview of the bundled palette colors, not an editor screenshot._
 
 1. Install the Zenkai `.vsix` file using **Extensions: Install from VSIX…** in the Command Palette.
 2. Run **Preferences: Color Theme**.
-3. Choose **Zenkai Graphite**, **Zenkai Classic**, **Zenkai Espresso**, **Zenkai Nautilus**, or the light **Zenkai Paper**.
+3. Choose **Zenkai Graphite**, **Zenkai Classic**, **Zenkai Espresso**, **Zenkai Nautilus**, **Zenkai Clay**, or the light **Zenkai Paper**.
 
 Open the Command Palette with **⌘⇧P** on macOS or **Ctrl+Shift+P** on Windows and Linux. If Zenkai is already installed, start at step 2.
 

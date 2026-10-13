@@ -1,4 +1,5 @@
 import classicVariant from "./variants/classic";
+import clayVariant from "./variants/clay";
 import espressoVariant from "./variants/espresso";
 import graphiteVariant from "./variants/graphite";
 import nautilusVariant from "./variants/nautilus";
@@ -11,5 +12,6 @@ export const variants: readonly ThemeVariantSource[] = [
   espressoVariant,
   nautilusVariant,
   graphiteVariant,
+  clayVariant,
   paperVariant,
 ];

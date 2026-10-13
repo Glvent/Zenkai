@@ -41,6 +41,7 @@ const taglineById: Record<string, string> = Object.freeze({
   graphite: "A muted graphite dark theme with neutral accents.",
   classic: "A muted dark theme with a warm-olive cast.",
   espresso: "A muted dark theme with a warm-brown cast.",
+  clay: "A muted dark theme with warm charcoal and clay-orange accents, inspired by Anthropic.",
   nautilus: "A muted dark theme with a cool blue-gray cast.",
   paper: "A muted light theme with a warm off-white cast.",
 });

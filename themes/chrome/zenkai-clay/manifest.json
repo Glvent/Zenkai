@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Zenkai Clay",
+  "short_name": "Zenkai",
+  "version": "1.0.0",
+  "version_name": "1.0",
+  "description": "Zenkai Clay - A muted dark theme with warm charcoal and clay-orange accents, inspired by Anthropic.",
+  "minimum_chrome_version": "88",
+  "theme": {
+    "colors": {
+      "background_tab": [31, 30, 29],
+      "background_tab_inactive": [31, 30, 29],
+      "background_tab_incognito": [31, 30, 29],
+      "background_tab_incognito_inactive": [31, 30, 29],
+      "bookmark_text": [248, 248, 246],
+      "button_background": [31, 30, 29],
+      "frame": [31, 30, 29],
+      "frame_inactive": [31, 30, 29],
+      "frame_incognito": [31, 30, 29],
+      "frame_incognito_inactive": [31, 30, 29],
+      "ntp_background": [16, 16, 14],
+      "ntp_header": [31, 30, 29],
+      "ntp_link": [50, 50, 250],
+      "ntp_text": [248, 248, 246],
+      "omnibox_background": [62, 62, 60],
+      "omnibox_text": [248, 248, 246],
+      "tab_background_text": [223, 223, 221],
+      "tab_background_text_inactive": [198, 198, 196],
+      "tab_background_text_incognito": [223, 223, 221],
+      "tab_background_text_incognito_inactive": [198, 198, 196],
+      "tab_text": [248, 248, 246],
+      "toolbar": [46, 46, 44],
+      "toolbar_button_icon": [198, 198, 196],
+      "toolbar_text": [248, 248, 246]
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import classicTheme from "../../themes/zenkai-classic.json";
+import clayTheme from "../../themes/zenkai-clay.json";
 import espressoTheme from "../../themes/zenkai-espresso.json";
 import nautilusTheme from "../../themes/zenkai-nautilus.json";
 import graphiteTheme from "../../themes/zenkai-graphite.json";
@@ -11,6 +12,7 @@ const classicThemeDocument = classicTheme as ThemeDocument;
 const espressoThemeDocument = espressoTheme as ThemeDocument;
 const nautilusThemeDocument = nautilusTheme as ThemeDocument;
 const graphiteThemeDocument = graphiteTheme as ThemeDocument;
+const clayThemeDocument = clayTheme as ThemeDocument;
 const paperThemeDocument = paperTheme as ThemeDocument;
 
 export const SETTINGS_NAMESPACE = "zenkai";
@@ -28,6 +30,9 @@ export const SUPPORTED_THEMES: Record<ThemeName, ThemeDefinition> = Object.freez
   },
   "Zenkai Graphite": {
     colors: graphiteThemeDocument.colors,
+  },
+  "Zenkai Clay": {
+    colors: clayThemeDocument.colors,
   },
   "Zenkai Paper": {
     colors: paperThemeDocument.colors,

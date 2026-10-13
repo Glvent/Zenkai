@@ -4,6 +4,7 @@ export type ThemeName =
   | "Zenkai Espresso"
   | "Zenkai Nautilus"
   | "Zenkai Graphite"
+  | "Zenkai Clay"
   | "Zenkai Paper";
 
 // Raw settings mirror VS Code configuration values before validation and coercion.

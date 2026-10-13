@@ -5,12 +5,14 @@ import { getSupportedThemeNames } from "../src/customization";
 import { MANAGED_COLOR_KEYS } from "../src/customization/keys";
 import classicTheme from "../themes/zenkai-classic.json";
 import espressoTheme from "../themes/zenkai-espresso.json";
+import clayTheme from "../themes/zenkai-clay.json";
 import graphiteTheme from "../themes/zenkai-graphite.json";
 import nautilusTheme from "../themes/zenkai-nautilus.json";
 import paperTheme from "../themes/zenkai-paper.json";
 import { commentGray } from "../../../src/palettes/color";
 import classicVariant from "../../../src/palettes/variants/classic";
 import espressoVariant from "../../../src/palettes/variants/espresso";
+import clayVariant from "../../../src/palettes/variants/clay";
 import graphiteVariant from "../../../src/palettes/variants/graphite";
 import nautilusVariant from "../../../src/palettes/variants/nautilus";
 import paperVariant from "../../../src/palettes/variants/paper";
@@ -20,6 +22,7 @@ const bundledThemes = [
   ["Zenkai Espresso", espressoTheme, espressoVariant],
   ["Zenkai Nautilus", nautilusTheme, nautilusVariant],
   ["Zenkai Graphite", graphiteTheme, graphiteVariant],
+  ["Zenkai Clay", clayTheme, clayVariant],
   ["Zenkai Paper", paperTheme, paperVariant],
 ] as const;
 
@@ -134,6 +137,7 @@ test("theme type follows each variant's appearance", () => {
     "Zenkai Espresso": "dark",
     "Zenkai Nautilus": "dark",
     "Zenkai Graphite": "dark",
+    "Zenkai Clay": "dark",
     "Zenkai Paper": "light",
   };
 
