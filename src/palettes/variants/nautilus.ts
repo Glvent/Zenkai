@@ -43,13 +43,13 @@ export const nautilusVariant: ThemeVariantSource = {
 
     indentGuideActive: "#5a5b60",
 
-    info: "#5888b0",
+    info: "#5ad4e6",
 
     fgSubtle: "#6c6d72",
 
     fgStatus: "#6e6f74",
 
-    success: "#78b888",
+    success: "#7bd88f",
 
     fgMuted: "#8c8d92",
 
@@ -57,15 +57,15 @@ export const nautilusVariant: ThemeVariantSource = {
 
     accent: "#5278a0",
 
-    purple: "#9890d8",
+    purple: "#948ae3",
 
     fgSecondary: "#b9b8be",
 
     fg: "#d8dbe1",
 
-    error: "#d07888",
+    error: "#fc618d",
 
-    warning: "#d0a870",
+    warning: "#fd9353",
 
     pureRed: "#ff0000",
 

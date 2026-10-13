@@ -1,7 +1,7 @@
 import type { ThemeVariantSource } from "../types";
 
 // Clay follows Claude's dark interface and docs: pure neutral near-black grays,
-// warm off-white text, the clay brand accent, and Claude's status colors.
+// warm off-white text, and the clay brand accent. Syntax colors match Graphite.
 export const clayVariant: ThemeVariantSource = {
   id: "clay",
   name: "Zenkai Clay",
@@ -20,18 +20,18 @@ export const clayVariant: ThemeVariantSource = {
     panelBorder: "#353535",
     interactionBg: "#424242",
     indentGuideActive: "#4f4f4f",
-    info: "#6da7ec",
+    info: "#5ad4e6",
     fgSubtle: "#6d6b67",
     fgStatus: "#7b7974",
-    success: "#55bf50",
+    success: "#7bd88f",
     fgMuted: "#898781",
     fgSidebar: "#a5a49a",
-    purple: "#b796ff",
+    purple: "#948ae3",
     fgSecondary: "#c3c2b7",
     accent: "#d97757",
     fg: "#f0efec",
-    error: "#ec7e7e",
-    warning: "#f9c868",
+    error: "#fc618d",
+    warning: "#fd9353",
     pureRed: "#ff0000",
     brightFg: "#f9f9f7",
   },
