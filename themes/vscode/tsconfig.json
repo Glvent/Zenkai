@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "Node16",
+    "moduleResolution": "node16",
     "rootDir": ".",
     "outDir": "dist",
     "resolveJsonModule": true,
@@ -14,17 +14,6 @@
       "node"
     ]
   },
-  "include": [
-    "build.ts",
-    "extension.ts",
-    "lib/**/*.ts",
-    "test/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "docs",
-    "theme-references",
-    "palettes",
-    "*.vsix"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", ".test-build"]
 }

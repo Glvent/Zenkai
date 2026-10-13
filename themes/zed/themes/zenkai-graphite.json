@@ -82,7 +82,7 @@
         "editor.document_highlight.write_background": "#f7f1ff26",
         "editor.indent_guide": "#555356",
         "editor.indent_guide_active": "#6c6a6f",
-        "link_text.hover": "#f0a84a",
+        "link_text.hover": "#5ad4e6",
         "terminal.background": "#282828",
         "terminal.foreground": "#f7f1ff",
         "terminal.bright_foreground": "#ffffff",
@@ -115,9 +115,9 @@
         "created": "#7bd88f",
         "created.background": "#7bd88f19",
         "created.border": "#7bd88f",
-        "modified": "#f0a84a",
-        "modified.background": "#f0a84a19",
-        "modified.border": "#f0a84a",
+        "modified": "#fd9353",
+        "modified.background": "#fd935319",
+        "modified.border": "#fd9353",
         "deleted": "#fc618d",
         "deleted.background": "#fc618d19",
         "deleted.border": "#fc618d",
@@ -235,7 +235,7 @@
             "color": "#fc618d"
           },
           "link_uri": {
-            "color": "#f0a84a"
+            "color": "#7bd88f"
           },
           "module": {
             "color": "#5ad4e6"
@@ -299,7 +299,7 @@
             "color": "#fc618d"
           },
           "text.literal": {
-            "color": "#f0a84a"
+            "color": "#fd9353"
           },
           "title": {
             "color": "#f0a84a"

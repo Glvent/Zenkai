@@ -19,7 +19,11 @@
     "**/.vscodeignore": true,
     "**/.cursorignore": true,
     "**/.npmrc": true,
-    "**/.trunk": true
+    "**/.trunk": true,
+    "themes/vscode/tsconfig.json": true,
+    "themes/vscode/tsconfig.test.json": true,
+    "themes/vscode/tsconfig.tooling.json": true,
+    "themes/vscode/.test-build": true
   },
   // Keep the file watcher off heavy / generated trees to cut CPU and noise.
   "files.watcherExclude": {
@@ -29,6 +33,7 @@
     "**/dist/**": true,
     "**/out/**": true,
     "**/.theme-build/**": true,
+    "themes/vscode/.test-build/**": true,
     "**/coverage/**": true,
     "**/*.vsix": true,
     "**/*.tsbuildinfo": true

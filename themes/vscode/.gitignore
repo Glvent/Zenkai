@@ -1,5 +1,6 @@
 # VS Code extension build output
 .theme-build/
+.test-build/
 *.vsix
 
 # Local editor settings (within the extension workspace)
