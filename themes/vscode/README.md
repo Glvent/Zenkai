@@ -32,7 +32,7 @@ _An overview of the bundled palette colors, not an editor screenshot._
 | **Zenkai Classic**  | Warm olive and muted gold      | `#282826`         | `#ddb860` |
 | **Zenkai Espresso** | Warm browns and soft copper    | `#282724`         | `#c89878` |
 | **Zenkai Nautilus** | Cool blue-grays and slate blue | `#292a2d`         | `#5278a0` |
-| **Zenkai Clay**     | Near-black, clay accent        | `#181818`         | `#d97757` |
+| **Zenkai Clay**     | Near-black, clay accent        | `#1a1a1a`         | `#d97757` |
 | **Zenkai Paper**    | Light warm paper and ochre     | `#e9e7e1`         | `#8a5e10` |
 
 ### Color where it counts
