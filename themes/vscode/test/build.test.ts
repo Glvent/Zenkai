@@ -83,6 +83,7 @@ test("build emits only runtime files without changing versions, packages, or oth
 		path.join(extension, "zenkai-0.0.1.vsix"),
 		path.join(root, "themes", "zed", "themes", "zenkai-graphite.json"),
 		path.join(root, "themes", "chrome", "zenkai-graphite", "manifest.json"),
+		path.join(root, "themes", "codex", "zenkai-clay.codex-theme"),
 		path.join(root, "assets", "swatches", "keep.svg"),
 	];
 	for (const file of untouched) {
@@ -123,12 +124,31 @@ test("all-target generation recreates outputs from separate bases and stays dete
 	const baseBefore = bases.map((file) => readFileSync(file, "utf8"));
 	assertSuccess(runMode(extension, "generate"));
 
-	const outputs = variantIds.flatMap((id) => [
-		path.join(extension, "themes", `zenkai-${id}.json`),
-		path.join(root, "themes", "zed", "themes", `zenkai-${id}.json`),
-		path.join(root, "themes", "chrome", `zenkai-${id}`, "manifest.json"),
-	]);
+	const outputs = [
+		...variantIds.flatMap((id) => [
+			path.join(extension, "themes", `zenkai-${id}.json`),
+			path.join(root, "themes", "zed", "themes", `zenkai-${id}.json`),
+			path.join(root, "themes", "chrome", `zenkai-${id}`, "manifest.json"),
+		]),
+		path.join(root, "themes", "codex", "zenkai-clay.json"),
+		path.join(root, "themes", "codex", "zenkai-clay.codex-theme"),
+	];
 	const outputBefore = outputs.map((file) => readFileSync(file, "utf8"));
+	const codexPayload = JSON.parse(
+		readFileSync(path.join(root, "themes", "codex", "zenkai-clay.json"), "utf8")
+	);
+	const codexShare = readFileSync(
+		path.join(root, "themes", "codex", "zenkai-clay.codex-theme"),
+		"utf8"
+	).trim();
+	assert.ok(codexShare.startsWith("codex-theme-v1:"));
+	assert.deepEqual(JSON.parse(codexShare.slice("codex-theme-v1:".length)), codexPayload);
+	assert.equal(codexPayload.variant, "dark");
+	assert.equal(codexPayload.codeThemeId, "monokai");
+	assert.equal(codexPayload.theme.accentSource, "custom");
+	assert.equal(codexPayload.theme.surface, "#1d1d1d");
+	assert.equal(codexPayload.theme.ink, "#f0efec");
+	assert.equal(codexPayload.theme.accent, "#d97757");
 	for (const id of variantIds) {
 		const expectedName = `Zenkai ${id[0].toUpperCase()}${id.slice(1)}`;
 		assert.equal(

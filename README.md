@@ -1,6 +1,6 @@
 # Zenkai
 
-A minimal, muted theme forked from Monokai Pro, with five dark variants and one light variant. Available for **VS Code**, **Zed**, and **Chrome**.
+A minimal, muted theme forked from Monokai Pro, with five dark variants and one light variant. Available for **VS Code**, **Zed**, and **Chrome**, with a **Codex desktop** appearance preset for Clay.
 
 ---
 
@@ -39,6 +39,14 @@ This builds and tests the extension, packages a VSIX, and installs it into your 
 2. Click **Load unpacked**.
 3. Select a variant folder, such as `themes/chrome/zenkai-graphite`.
 
+### Codex desktop
+
+1. Open **Settings → Appearance** and choose **Dark**.
+2. Under **Dark theme**, click **Import**.
+3. Paste the contents of [`themes/codex/zenkai-clay.codex-theme`](themes/codex/zenkai-clay.codex-theme), then click **Import theme**.
+
+This preset uses Clay's colors with the built-in Monokai code theme. See the [Codex guide](themes/codex/README.md) for copying the share string, backing up your appearance, and format limits.
+
 ## VS Code settings
 
 | Setting                        | Description                                                                                      |
@@ -54,7 +62,7 @@ This builds and tests the extension, packages a VSIX, and installs it into your 
 src/
 ├── palettes/       Shared roles, color helpers, and variant palettes
 ├── bases/          Hand-authored Graphite inputs for each target
-└── generators/     VS Code, Zed, Chrome, and documentation swatches
+└── generators/     VS Code, Zed, Chrome, Codex, and documentation swatches
 
 themes/
 ├── vscode/
@@ -64,7 +72,8 @@ themes/
 │   ├── themes/     Generated theme JSON shipped with the extension
 │   └── assets/     Extension icon
 ├── zed/            Zed extension and generated theme JSON
-└── chrome/         Generated Chrome theme manifests
+├── chrome/         Generated Chrome theme manifests
+└── codex/          Generated Clay appearance payload and native import string
 ```
 
 ## Development commands
