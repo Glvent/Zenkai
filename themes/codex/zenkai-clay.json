@@ -1,0 +1,21 @@
+{
+  "codeThemeId": "monokai",
+  "theme": {
+    "accent": "#d97757",
+    "accentSource": "custom",
+    "contrast": 60,
+    "fonts": {
+      "code": null,
+      "ui": null
+    },
+    "ink": "#f0efec",
+    "opaqueWindows": true,
+    "semanticColors": {
+      "diffAdded": "#7bd88f",
+      "diffRemoved": "#fc618d",
+      "skill": "#948ae3"
+    },
+    "surface": "#1d1d1d"
+  },
+  "variant": "dark"
+}

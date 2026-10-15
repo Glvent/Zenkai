@@ -245,6 +245,15 @@ Bracket pair colors (VS Code) and Zed `accents` use the same order: `error`, `wa
 
 ## Adding a new target
 
+Codex desktop is a constrained appearance target. `src/generators/codex.ts`
+maps Clay's roles directly into its native share payload: `editorBg` to
+`surface`, `fg` to `ink`, `accent` to `accent`, `success` to `diffAdded`,
+`error` to `diffRemoved`, and `purple` to `skill`. Contrast is `60`; windows
+are opaque and fonts use system defaults. The share format references the
+built-in `monokai` code theme rather than accepting custom syntax rules.
+Only Clay is generated for this target, as a JSON payload and matching
+`codex-theme-v1:` import string under `themes/codex/`.
+
 1. Hand-author `src/bases/<target>.json` using only Graphite palette values (and the derived colors above) for anything that should vary per variant. Use off-palette values only for colors that should stay identical across variants.
 2. Pick roles by meaning, using the role tables and cross-target mappings above. Keep the background brightness ladder intact.
 3. Add `src/generators/<target>.ts` that follows the existing generators: read the separate Graphite base input, reverse-map values to roles, substitute each variant from the shared registry, preserve alpha, and convert the color format if needed (see `src/palettes/color.ts`). Write outputs under `themes/<target>/`.
